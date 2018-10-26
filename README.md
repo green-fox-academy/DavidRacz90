@@ -1,4 +1,4 @@
-[Sylabbus of GFA](https://github.com/green-fox-academy/teaching-materials/tree/master/syllabus)
+[Sylabbus](https://github.com/green-fox-academy/really-syllabus)
 
 
 
