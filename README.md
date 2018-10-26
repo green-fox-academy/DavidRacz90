@@ -1,3 +1,5 @@
-https://github.com/green-fox-academy/DavidRacz90/tree/master/week-01/Day-01
+https://github.com/DavidRacz90/git-lesson-repository
 
-https://github.com/green-fox-academy/DavidRacz90/tree/master/week-01/Day-02
+https://github.com/DavidRacz90/HelloWorld
+
+https://github.com/DavidRacz90/patchwork
