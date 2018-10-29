@@ -7,4 +7,4 @@ for(let i=1; i<= lineCount; i++){
     let star = '*'.repeat(i*2 -1)
  
     console.log(space + star + space);
-  }
+  } 
