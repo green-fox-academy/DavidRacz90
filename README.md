@@ -1,4 +1,4 @@
-[Sylabbus of GFA](https://github.com/green-fox-academy/teaching-materials/tree/master/syllabus)
+[Sylabbus](https://github.com/green-fox-academy/really-syllabus)
 
 
 
@@ -7,3 +7,5 @@
 [Git-it repository, 1st part](https://github.com/DavidRacz90/HelloWorld)
 
 [Git-it repository, 2nd part](https://github.com/DavidRacz90/patchwork)
+
+[Personal Page](https://github.com/DavidRacz90/DavidRacz90.github.io)
