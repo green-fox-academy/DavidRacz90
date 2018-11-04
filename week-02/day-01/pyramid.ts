@@ -1,10 +1,16 @@
 "use strict";
-export{}
-let lineCount: number = 4;
+export { }
 
-for(let i=1; i<= lineCount; i++){
-    let space = ' '.repeat(lineCount-i);
-    let star = '*'.repeat(i*2 -1)
- 
-    console.log(space + star + space);
-  } 
+printPyramid(4)
+
+function printPyramid(height){
+  for (let i = 1; i <= height; i++) {
+    printLine(height, i, i)
+  }
+}
+
+function printLine(height, numberOfSpace, numberOfStar) {
+  let space = ' '.repeat(height - numberOfSpace);
+  let star = '*'.repeat(numberOfStar * 2 - 1)
+  console.log(space + star + space);
+}
