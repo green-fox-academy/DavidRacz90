@@ -8,18 +8,21 @@ const ctx = canvas.getContext('2d');
 // draw a red horizontal line to the canvas' middle.
 // draw a green vertical line to the canvas' middle.
 
+let x:number = canvas.width;
+let y:number = canvas.height;
+
 function drawHorizontal() {
     ctx.beginPath();
-    ctx.moveTo(0, 200,);
-    ctx.lineTo(600,200);
+    ctx.moveTo(x-x, y/2,);
+    ctx.lineTo(x,y/2);
     ctx.strokeStyle = 'red';
     ctx.stroke();
 }
 
 function drawVertical() {
     ctx.beginPath();
-    ctx.moveTo(300, 0,);
-    ctx.lineTo(300,400);
+    ctx.moveTo(x/2, y-y,);
+    ctx.lineTo(x/2,y);
     ctx.strokeStyle = 'green';
     ctx.stroke();
 }
