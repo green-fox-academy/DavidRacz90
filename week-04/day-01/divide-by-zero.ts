@@ -13,5 +13,5 @@ function dividing(number: number): number {
 try {
     console.log(dividing(0));
 } catch(e) {
-    console.log(e.message)
+    console.log(e)
 }
