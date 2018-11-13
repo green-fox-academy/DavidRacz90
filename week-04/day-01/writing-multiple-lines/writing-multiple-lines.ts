@@ -10,8 +10,8 @@
 export { };
 const fs = require('fs');
 
-function writing(path: string, word: string, number: number): void {
+function writeInFile(path: string, word: string, number: number): void {
     fs.writeFileSync(path, (word+('\r\n')).repeat(number));
 }
 
-writing('My-text.txt', 'apple', 5);
+writeInFile('My-text.txt', 'apple', 5);
