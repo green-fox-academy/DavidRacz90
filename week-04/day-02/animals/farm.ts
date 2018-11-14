@@ -27,13 +27,21 @@ export class Farm {
     }
 
     slaughter()  {
-        let leastHungryAnimal: number[] = [];
-        this.listOfAnimals.forEach((animal) => {
-            leastHungryAnimal.push(Math.min(animal.hunger));
-            return leastHungryAnimal;
-            
-        }) 
-        console.log(leastHungryAnimal);
+        let theHungerLevelOfAnimals: number[] = [];
+        this.listOfAnimals.forEach(animal => {
+					theHungerLevelOfAnimals.push(animal.hunger)
+				});
+				let theLeastHungryAnimal = Math.min(...theHungerLevelOfAnimals);
+					this.listOfAnimals.map((animal, index, ) => {
+						if(animal.hunger === theLeastHungryAnimal) {
+							theHungerLevelOfAnimals.splice(index, 1)
+							this.slots++;
+							console.log('the slaughtered animal is the ' + animal.name + ' :(');
+						}
+					})
+					
+					return this.listOfAnimals;
+        
     }
 
 }
@@ -44,7 +52,7 @@ oldMcdonaldFarm.breed(new animal('cow',50,30));
 oldMcdonaldFarm.breed(new animal('chicken',50,40));
 oldMcdonaldFarm.breed(new animal('pig',10,40));
 oldMcdonaldFarm.breed(new animal('horse',80,32));
-oldMcdonaldFarm.breed(new animal('turkey',50,50));
+oldMcdonaldFarm.breed(new animal('turkey',5,50));
 oldMcdonaldFarm.breed(new animal('duck',50,50));
 oldMcdonaldFarm.breed(new animal('dog',50,50));
 
