@@ -6,32 +6,32 @@
 // Every animal can drink() which decreases their thirst by one
 // Every animal can play() which increases both by one
 
-export {}
+import { Farm } from "./farm"
 
-class animal {
+export class animal {
+
+    name: string;
     hunger: number = 50;
     thirst: number = 50;
 
+    constructor(name: string) {
+        this.name = name;
+    }
     eat() {
-         this.hunger--;
+        this.hunger--;
     }
 
     drink() {
-         this.thirst--;
+        this.thirst--;
     }
 
     play() {
-         this.hunger++;
-         this.thirst++;
+        this.hunger++;
+        this.thirst++;
     }
 
 
 }
-
-let dog = new animal();
-
-dog.eat();
-console.log('The dog\'s hunger is ' + dog.hunger);
 
 
 
