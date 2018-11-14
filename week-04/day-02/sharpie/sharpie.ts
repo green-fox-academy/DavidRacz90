@@ -6,8 +6,8 @@
 // // Every sharpie is created with a default 100 as inkAmount
 // // We can use() the sharpie objects
 // // which decreases inkAmount
-
-export { }
+import { sharpieSet } from "./sharpieSet"
+export {Sharpie }
 
 class Sharpie {
     color: string;
