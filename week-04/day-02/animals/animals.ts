@@ -14,8 +14,11 @@ export class animal {
     hunger: number = 50;
     thirst: number = 50;
 
-    constructor(name: string) {
+    constructor(name: string, hunger: number, thirst: number) {
         this.name = name;
+        this.hunger = hunger;
+        this.thirst = thirst;
+
     }
     eat() {
         this.hunger--;

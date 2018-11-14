@@ -15,7 +15,7 @@ export class Farm {
         this.slots = slots;
     }
 
-    breed(newAnimal: animal) {
+    breed(newAnimal: animal): void {
         
         if(this.slots > 0){
             this.listOfAnimals.push(newAnimal);
@@ -26,21 +26,29 @@ export class Farm {
         }
     }
 
-    slaughter() {
-        
+    slaughter()  {
+        let leastHungryAnimal: number[] = [];
+        this.listOfAnimals.forEach((animal) => {
+            leastHungryAnimal.push(Math.min(animal.hunger));
+            return leastHungryAnimal;
+            
+        }) 
+        console.log(leastHungryAnimal);
     }
 
 }
 
 let oldMcdonaldFarm = new Farm(10);
 
-oldMcdonaldFarm.breed(new animal('cow'));
-oldMcdonaldFarm.breed(new animal('chicken'));
-oldMcdonaldFarm.breed(new animal('pig'));
-oldMcdonaldFarm.breed(new animal('horse'));
-oldMcdonaldFarm.breed(new animal('turkey'));
-oldMcdonaldFarm.breed(new animal('duck'));
-oldMcdonaldFarm.breed(new animal('dog'));
+oldMcdonaldFarm.breed(new animal('cow',50,30));
+oldMcdonaldFarm.breed(new animal('chicken',50,40));
+oldMcdonaldFarm.breed(new animal('pig',10,40));
+oldMcdonaldFarm.breed(new animal('horse',80,32));
+oldMcdonaldFarm.breed(new animal('turkey',50,50));
+oldMcdonaldFarm.breed(new animal('duck',50,50));
+oldMcdonaldFarm.breed(new animal('dog',50,50));
+
 
 
 console.log(oldMcdonaldFarm)
+oldMcdonaldFarm.slaughter();
