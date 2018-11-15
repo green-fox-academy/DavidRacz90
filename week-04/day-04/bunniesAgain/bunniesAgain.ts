@@ -3,11 +3,11 @@
 // have 3 ears, because they each have a raised foot. Recursively return the
 // number of "ears" in the bunny line 1, 2, ... n (without loops or multiplication).
 
-function bunnyEarCounter (numberOfBunnies) {
-  
-  if( numberOfBunnies === 0 ) return 0;
-  
-  if( numberOfBunnies % 2 === 1) return 2 + bunnyEarCounter(numberOfBunnies-1)
+function bunnyEarCounter(numberOfBunnies) {
+
+  if (numberOfBunnies === 0) return 0;
+
+  if (numberOfBunnies % 2 === 1) return 2 + bunnyEarCounter(numberOfBunnies - 1)
   else return 3 + bunnyEarCounter(numberOfBunnies - 1)
 }
 
