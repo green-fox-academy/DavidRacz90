@@ -30,7 +30,7 @@ export class Sponsor {
     this.company = company;
   }
 
-  intrduce() {
+  introduce() {
     console.log(`Hi, I'm ${this.name}, a ${this.age} old ${this.gender} who represents ${this.company} and hired ${this.hiredStudent} students so far.`)
   }
 

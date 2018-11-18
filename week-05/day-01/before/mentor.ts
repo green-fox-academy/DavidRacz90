@@ -28,7 +28,7 @@ export class Mentor {
 
   }
 
-  intrduce() {
+  introduce() {
     console.log(`Hi, I'm ${this.name}, a ${this.age} old ${this.gender} ${this.level} mentor`)
   }
 

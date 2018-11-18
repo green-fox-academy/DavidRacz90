@@ -31,7 +31,7 @@ export class Student {
     this.previousOrganization = previosOrganization;
   }
 
-  intrduce() {
+  introduce() {
     console.log(`Hi, I'm ${this.name}, a ${this.age} old ${this.gender} from ${this.previousOrganization} who skipped ${this.skippedDays} from the course already.`)
   }
 

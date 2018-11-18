@@ -16,17 +16,17 @@
 
 export class Person {
 
-  name : string;
+  name: string;
   age: number;
   gender: string;
 
   constructor(name = 'Jane Doe', age = 30, gender = 'female') {
-      this.name = name;
-      this.age = age;
-      this.gender = gender;
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
   }
 
-  intrduce() {
+  introduce() {
     console.log(`Hi, I'm ${this.name}, a ${this.age} old ${this.gender}.`)
   }
 
