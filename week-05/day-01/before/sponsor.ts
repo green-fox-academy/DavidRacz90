@@ -23,10 +23,11 @@ export class Sponsor {
   hiredStudent: number = 0;
 
 
-  constructor(name = 'Jane Doe', age = 30, gender = 'female') {
+  constructor(name = 'Jane Doe', age = 30, gender = 'female', company = 'Google') {
     this.name = name;
     this.age = age;
     this.gender = gender;
+    this.company = company;
   }
 
   intrduce() {
