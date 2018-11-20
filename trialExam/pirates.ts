@@ -34,11 +34,11 @@ let pirates = initializePirates();
 function pirateSelector(): Pirate[] {
   let selectedPirates: Pirate[] = [];
   for (let i: number = 0; i < pirates.length; i++) {
-    if(pirates[i].gold > 15 && pirates[i].hasWoodenLeg === true) {
+    if (pirates[i].gold > 15 && pirates[i].hasWoodenLeg === true) {
       selectedPirates.push(pirates[i]);
     }
   }
-  
+
   return selectedPirates;
 }
 
