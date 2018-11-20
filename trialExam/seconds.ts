@@ -7,13 +7,13 @@
 
 
 function seconds(arr: number[]): number[] {
-  let secondList: number[] = []
+  let secondList: number[] = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 === 0) {
       secondList.push(arr[i]);
     }
   }
-  return secondList
+  return secondList;
 }
 
 console.log(seconds([1, 2, 3, 4, 5]));
