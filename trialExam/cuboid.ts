@@ -22,9 +22,13 @@ class cuboid {
     return surface;
   }
 
-  
+  getVolume(): number {
+    let volume = this.x * this.y * this.z;
+    return volume;
+  }
 
 }
 
 let newCuboid = new cuboid(5,6,7);
 console.log(newCuboid.getSurface());
+console.log(newCuboid.getVolume());
