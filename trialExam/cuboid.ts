@@ -29,6 +29,6 @@ class cuboid {
 
 }
 
-let newCuboid = new cuboid(5,6,7);
+let newCuboid = new cuboid(5, 6, 7);
 console.log(newCuboid.getSurface());
 console.log(newCuboid.getVolume());
