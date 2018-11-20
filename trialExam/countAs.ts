@@ -7,10 +7,13 @@
 
 function countAs(text: string): number {
   let counter: number = 0;
-  if (text.includes('a') === true) {
-    counter++;
-  }
+  text.split('').forEach(letterA => {
+    if (letterA === 'a') {
+      counter++;
+    }
+
+  })
   return counter;
 }
 
-countAs('Alma')
+console.log(countAs('alma'));
