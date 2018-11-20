@@ -4,16 +4,16 @@
 // example: [1, 2, 3, 4, 5] should produce [2, 4] - print this result
 
 
-let numlist: number[] = [1, 2, 3, 4, 5]
+
 
 function seconds(arr: number[]): number[] {
-  let secondList: number[];
-  for (let i: number = 0; i < arr.length; i++) {
-    if (numlist.indexOf[i] % 2 === 1) {
-      secondList.push(numlist[i]);
-      return secondList;
+  let secondList: number[] = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      secondList.push(arr[i]);
     }
   }
+  return secondList
 }
 
-console.log(seconds(numlist));
+console.log(seconds([1, 2, 3, 4, 5]));
