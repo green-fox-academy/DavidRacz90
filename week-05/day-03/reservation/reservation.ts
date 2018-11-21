@@ -5,7 +5,7 @@ import { Reservationy } from "./reservationy"
 // Also, the DOW is randomly ordered to the bookings from an array.
 // DOW stands for Day of the Week (MON, TUE, etc.)
 
- class Reservation implements Reservationy{
+ export class Reservation implements Reservationy{
   
   
   getDowBooking(): string {
@@ -18,9 +18,9 @@ import { Reservationy } from "./reservationy"
 
   getCodeBooking():string {
     
+    let reservationCode = Math.random().toString(36).substr(2,8).toUpperCase();
+    return reservationCode;  
   }
+   
 }
 
-let a = new Reservation()
-
-console.log(a.getDowBooking())
