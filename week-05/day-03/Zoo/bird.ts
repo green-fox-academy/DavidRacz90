@@ -1,7 +1,8 @@
 import { Animal } from "./animal"
+import { Flyable } from "../flyable";
 
 
-export class Bird extends Animal {
+export class Bird extends Animal implements Flyable {
 
 
 
@@ -25,9 +26,16 @@ export class Bird extends Animal {
 
 
 
+  land(){
+    console.log(`${this.name} has landed`)
+  };
   fly() {
-
-  }
+    console.log(`${this.name} is flying`)
+  };
+  
+  takeOff(){
+    console.log(`${this.name} taking off`)
+  };
 
 
 }

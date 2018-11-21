@@ -19,7 +19,7 @@ export class Mammal extends Animal {
   }
 
   breed(): string {
-    return 'pushing miniature version out'
+    return 'pushing miniature version out.'
   }
 
 
