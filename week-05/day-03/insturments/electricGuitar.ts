@@ -3,7 +3,7 @@ import { stringedInstrument } from "./stringedInstrument";
 
 export  class Guitar extends stringedInstrument {
 
-  constructor(numberOfStrings?: number) {
+  constructor(numberOfStrings: number = 6) {
     super('Electirc guitar', numberOfStrings )
   }
    
