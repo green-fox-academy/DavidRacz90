@@ -24,7 +24,7 @@ test('max of three: third', function (t: any): any {
 });
 
 test('median: four', function (t: any): any {
-  t.equal(median([7, 5, 3, 5]), 5);
+  t.equal(median([7, 9, 3, 999,10,505 ]), 10);
   t.end();
 });
 
@@ -39,7 +39,7 @@ test('is vowel: a', function (t: any): any {
 });
 
 test('is vowel: u', function (t: any): any {
-  t.ok(isVowel('u'));
+  t.ok(isVowel('U'));
   t.end();
 });
 
@@ -49,7 +49,7 @@ test("is vowel: k", function(t: any): any {
 });
 
 test('translate: bemutatkozik', function (t: any): any {
-  t.equal(translate('bemutatkozik'), 'bevemuvutavatkovozivik');
+  t.equal(translate('alma'), 'avalmava');
   t.end();
 });
 
