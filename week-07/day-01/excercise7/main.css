@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  background: #FFD62A;
+  width: 500px;
+  height: 250px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  padding: 10;
+}
+
+.item{
+  background: #B02AFF;
+  width: 60px;
+  height: 60px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
