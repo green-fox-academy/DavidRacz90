@@ -8,9 +8,10 @@
 }
 
 .item{
-  height: 40%;
-  width: 20%;
-  flex-grow: 1;
+  height: 50%;
+  width: 25%;
+  
+
 }
 
 .green {
@@ -20,7 +21,7 @@
 
 .yellow {
   background: #FFD62A;
-  flex-grow: 4;
+  flex-grow: 2;
 }
 
 .purple {
