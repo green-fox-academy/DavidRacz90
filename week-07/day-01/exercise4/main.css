@@ -9,19 +9,17 @@
 .item{
   height: 50%;
   width: 100%;
-  flex: 1;
-
+  flex: 1 0 0;
 }
 
 .green {
-  background: #51D400;
-  
+  background: #51D400;  
 }
 
 .yellow {
   background: #FFD62A;
   order: 1;
-  flex-grow: 2 
+  flex-grow: 2; 
 }
 
 .purple {
