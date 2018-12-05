@@ -1,15 +1,15 @@
 body {
   display: flex;
-    max-width: 400px;
-    max-height: 500px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  max-width: 400px;
+  max-height: 500px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header {
   background: #00FFFF;
-  width:400px;
+  width: 400px;
   height: 50px;
 }
 
@@ -24,9 +24,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-top: 0;
 }
-
 
 .main-content {
   background: #FE0000;
