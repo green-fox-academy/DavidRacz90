@@ -13,3 +13,5 @@
 [The wanderer](https://github.com/DavidRacz90/wanderer-typescript)
 
 [First exam](https://github.com/DavidRacz90/rueppellii-foundation-normal-exam)
+
+[Retake exam](https://github.com/DavidRacz90/rueppellii-foundation-retake-exam/tree/master)
