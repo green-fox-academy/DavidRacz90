@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+ <meta charset='UTF-8'>
+ <title>Account Login</title>
+ <link rel='stylesheet' type='text/css' href='main.css' media='screen' />
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" 
+ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body>
+ <div class='container'>
+   <div class='main'>
+     <h1>ACCOUNT LOGIN</h1>
+     <form id='form_id' method='post' name='myform'>
+       <label>USERNAME</label>
+       <input type='text' name='username' id='username' required autofocus= 'true'/>
+
+       <div>
+       </div>
+       <label>PASSWORD</label>
+       <div class="input icon">
+         <input type='password' name='password' id='password'/>
+         <i id="pass-status" class="fa fa-eye" aria-hidden="true" onClick="viewPassword()"></i>
+       </div>
+       <div>
+       </div>
+       <a href="#">Forgot password?</a>
+       <div>
+       </div>
+       <input type='button' value='Login' id='submit' onclick='validate()' />
+     </form>
+     <script src='login.js' type='text/javascript' defer async></script>
+   </div>
+ </div>
+</body>
+
+</html>
