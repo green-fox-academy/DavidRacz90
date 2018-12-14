@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0, auto;
+  width: 100%;
+  background: #EEEEEE;
+}
+
+header img{
+  width: 100%;
+  height: 400px;
+}
+
+.space {
+  position: absolute;
+  letter-spacing: 66px;
+  top: 24%;
+  color: white;
+  left: 38%;
+  font-size: 45px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+main {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  
+}
+
+.posts {
+  width: 80%;
+  border: 1px solid black;
+  margin: 20px 15px 20px 15px;
+  background: white;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+button {
+  width: 25%;
+  color: white;
+  background: rgb(72,155,213);
+  flex-direction: column;
+}
