@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cocktails</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+  </head>
+  <body>
+    <h1>Cocktails:</h1>
+
+  <table id="t01"> 
+    <tr>
+      <th>Cocktails</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <% cocktails.forEach(e => { %>
+        <td>
+          <%=e.name%><br>
+          <%=e.contains%>
+        </td>
+          <td>
+            <%=e.price%>
+          </td>
+        </tr>
+        <% }); %>
+  </table>
+      
+    
+  </body>
+</html>
