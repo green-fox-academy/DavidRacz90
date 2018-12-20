@@ -11,7 +11,7 @@ const sendHTTPRequest = (url, method, callback) => {
  xhr.send();
 }
 const tablebody = document.querySelector('table');
-const URL = '/bookinfo';
+const URL = '/';
 sendHTTPRequest(URL, 'GET', (response) => {
  console.log(response);
  response.forEach(e => {

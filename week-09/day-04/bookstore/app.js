@@ -18,7 +18,7 @@ const conn = mysql.createConnection({
 
 app.use('/static', express.static('static'));
 
-app.get('/', (req, res) => {
+app.get('/bookinfo', (req, res) => {
  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
@@ -36,7 +36,7 @@ WHERE book_mast.aut_id = author.aut_id
 AND book_mast.pub_id = publisher.pub_id
 AND book_mast.cate_id = category.cate_id`
 
-app.get('/bookinfo', (req, res) => {
+app.get('/', (req, res) => {
  conn.query(baseQuery, (err, rows) => {
    if (err) {
      console.log(err.toString());
