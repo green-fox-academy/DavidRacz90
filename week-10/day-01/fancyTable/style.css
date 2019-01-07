@@ -1,0 +1,46 @@
+body {
+  background: #3E94EC;
+  
+}
+table {
+  border: 1px solid grey;
+  border-radius: 20px;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+.sales::before {
+  content: ' \0024 ';
+}
+
+tr:nth-child(even) {
+  background-color: #DDD;
+}
+
+tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+th {
+  background: black;
+  width: 200px;
+  height: 50px;
+  color: white;
+  border: 1px solid grey;
+  border-bottom: 3px solid grey;
+  text-align: left;
+  padding-left: 20px;
+}
+
+td {
+  width: 200px;
+  height: 40px;
+  border: 1px solid grey;
+  padding-left: 20px;
+}
+
+.wrapper {
+  overflow: auto;
+  border-radius: 3px;
+  width: 400px;
+}
