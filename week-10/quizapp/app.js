@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'game.html'));
 });
 
-app.get('/login', (req, res) => {
+app.get('/questions', (req, res) => {
   res.sendFile(path.join(__dirname, 'questions.html'));
 });
 
@@ -30,7 +30,7 @@ app.get('/game', (req, res) => {
   const sql = `SELECT questions.question, questions.id, answers.id, answers.question_id, answers.answer, answers.is_correct FROM questions INNER JOIN answers 
   ON questions.id = answers.question_id WHERE questions.id = '${randomID}';`
   conn.query(sql, (err, data) => {
-    if(err) {
+    if (err) {
       res.send(500)
       console.log('Internal server error');
       return;
@@ -39,6 +39,18 @@ app.get('/game', (req, res) => {
   });
 });
 
+app.get('/api/questions', (req, res) => {
+  const sql = `SELECT * FROM questions;`;
+  conn.query(sql, (err, data) => {
+    if (err) {
+      res.send(500);
+      console.log('Internal Server Error');
+      return;
+    }
+   res.json(data); 
+  });
+});
+
 app.listen(PORT, () => {
-console.log(`App is listen on port: ${PORT}`);
+  console.log(`App is listen on port: ${PORT}`);
 });
