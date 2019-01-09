@@ -51,6 +51,13 @@ app.get('/api/questions', (req, res) => {
   });
 });
 
+app.post('/api/questions', (req, res) => {
+  const { qID, question, aID, aqID, answer, is_correct } = req.body;
+  const sql = `BEGIN; INSERT INTO questions (question) VALUES (, '${question}'); INSERT INTO answers (id, question_id, answer, is_correct)
+  VALUES('${aID}', '${aqID}', '${answer}', '${is_correct}'); COMMIT;`
+
+});
+
 app.listen(PORT, () => {
   console.log(`App is listen on port: ${PORT}`);
 });
